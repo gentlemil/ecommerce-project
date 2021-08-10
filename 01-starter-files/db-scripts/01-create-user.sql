@@ -1,3 +1,4 @@
+SET GLOBAL validate_password.policy=LOW;
 CREATE USER 'ecommerceapp'@'localhost' IDENTIFIED BY 'ecommerceapp';
 
 GRANT ALL PRIVILEGES ON * . * TO 'ecommerceapp'@'localhost';
