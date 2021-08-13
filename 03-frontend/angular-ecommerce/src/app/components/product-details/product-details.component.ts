@@ -10,7 +10,8 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class ProductDetailsComponent implements OnInit {
 
-  product: Product;
+  product: Product = new Product();   // fixing ERROR TypeError: Cannot read property 'imageUrl' of undefined
+  // other option is use question mark in html {{product?.imageUrl}}
 
   constructor(private productService: ProductService, private route: ActivatedRoute) { }
 
