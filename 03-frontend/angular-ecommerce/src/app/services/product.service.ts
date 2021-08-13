@@ -10,11 +10,18 @@ import { ProductCategory } from '../common/product-category';
 })
 export class ProductService {
 
+
   private baseUrl = 'http://localhost:8070/api/products';
   // by default spring shows only 20 first items, by adding `?size=100` at the end we will see 100 of them
   private categoryUrl = 'http://localhost:8070/api/product-category';
 
   constructor(private httpClient: HttpClient) { }
+
+  getProduct(theProductId: number): Observable<Product> {
+    // need to build URL based on product id
+    const productUrl = `${this.baseUrl}/${theProductId}`;
+    return this.httpClient.get<Product>(productUrl);
+  }
 
   getProductList(theCategoryId: number): Observable<Product[]> {
     const searchUrl = `${this.baseUrl}/search/findByCategoryId?id=${theCategoryId}`;  // build url based on category id
@@ -46,7 +53,6 @@ interface GetResponseProducts {     // switch from GetResponse for more qunique 
     products: Product[];
   }
 }
-
 
 // *unwraps the JSON from Spring Data REST _embedded entry
 interface GetResponseProductsCategory {
