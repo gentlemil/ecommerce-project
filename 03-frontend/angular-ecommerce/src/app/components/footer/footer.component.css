@@ -1,0 +1,89 @@
+footer {
+	background: #FCCCAD;
+	color: #FFFFFF;
+	padding: 50px;
+}
+
+h2 {
+	color: #FFFFFF !important;
+	font-size: 30px;
+	padding-bottom: 0.5em;
+}
+
+p {
+	color: #FFFFFF !important;
+	font-size: 16px;
+}
+
+.contact-list li {
+	line-height: 1.1;
+}
+
+.footer-contact-content {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-icon {
+	padding-right: 1rem;
+}
+
+.galmeo {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+.security {
+	padding-top: 25px;
+}
+.input-group {
+	/* width: 100%; */
+	display: flex;
+	justify-content: space-around;
+	padding: 0 25px 25px 25px;
+}
+
+.input-group .form-control {
+	max-width: 450px;
+	padding-right: 25px;
+	border: none;
+	border-bottom: 1px solid #FFFFFF;
+	background: transparent;
+}
+
+.input-group .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #FFFFFF;
+	opacity: 0.9; /* Firefox */
+  }
+
+
+.btn-pink {
+	background-color: #F4B1D2;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+.about {
+	padding-top: 25px;
+}
+
+.about .content {
+	padding-top: 2em;
+}
+
+.social-media {
+	padding-top: 10px;
+}
+
+.about .social-media .list-inline li a {
+	font-size: 24px;
+}
+
+.footer-info-single {
+	margin: 0 auto;
+	padding-top: 15px;
+}
