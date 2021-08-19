@@ -23,7 +23,7 @@ export interface Product {
 export const products = [
 	{
 		id: 1,
-		color: '#F4B1D2',
+		color: '#F4D6E8',
 		colorDarker: '#F4B1D2',
 		imageUrl: `assets/img/beauty-products/white-background-all/white-peeling-pink.JPG`,
 		category: `Linia do cery tłustej/mieszanej/trądzikowej`,
@@ -62,7 +62,7 @@ export const products = [
 	},
 	{
 		id: 2,
-		color: '#F4B1D2',
+		color: '#F4D6E8',
 		colorDarker: '#D185AA',
 		imageUrl: `assets/img/beauty-products/white-background-all/white-serum-pink.JPG`,
 		category: `Linia do cery tłustej/mieszanej/trądzikowej`,
@@ -102,7 +102,7 @@ export const products = [
 	},
 	{
 		id: 3,
-		color: '#f4d6e8',
+		color: '#F4D6E8',
 		colorDarker: '#F4B1D2',
 		imageUrl: `assets/img/beauty-products/white-background-all/white-tonic-pink.JPG`,
 		category: `Linia do cery tłustej/mieszanej/trądzikowej`,

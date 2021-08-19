@@ -1,3 +1,5 @@
+<app-banner-carousel></app-banner-carousel>
+<!-- <h1 class="header">Nasza oferta</h1> -->
 <div class="products-container">
 	<div class="card col-4" *ngFor="let product of products">
 		<a [title]="product.name + ' details'" [routerLink]="['/products', product.id]">
@@ -11,8 +13,8 @@
 			<i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i>
 		</div>
 		<div class="card-bottom">
-			<!-- <div class="counter" [ngStyle]="{'background': (product.color)}">1</div> -->
 			<button class="buy" [ngStyle]="{'background': (product.color)}">DODAJ</button>
 		</div>
 	</div>
 </div>
+<app-single-banner></app-single-banner>

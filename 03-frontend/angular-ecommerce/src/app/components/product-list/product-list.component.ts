@@ -12,8 +12,6 @@ export class ProductListComponent implements OnInit {
 
   products = products;
 
-
-
   constructor(
     private route: ActivatedRoute,
   ) { }

@@ -14,6 +14,7 @@ import { SearchComponent } from './components/search/search.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BannerCarouselComponent } from './components/banner-carousel/banner-carousel.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SingleBannerComponent } from './components/single-banner/single-banner.component';
 
 const routes: Routes = [
   { path: '', component: ProductListComponent },
@@ -37,7 +38,8 @@ const routes: Routes = [
     ProductDetailsComponent,
     NavbarComponent,
     BannerCarouselComponent,
-    FooterComponent
+    FooterComponent,
+    SingleBannerComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
