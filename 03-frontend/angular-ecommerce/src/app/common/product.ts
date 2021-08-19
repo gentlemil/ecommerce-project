@@ -377,6 +377,45 @@ export const products = [
 		amount: `30ml`,
 		available: true,
 	},
+	{
+		id: 10,
+		color: '#E7C9F5',
+		colorDarker: 'rgb(231, 201, 245, 0.75)',
+		imageUrl: `assets/img/accessories/sth-pinkish.JPG`,
+		category: `mist`,
+		type: `Accessories`,
+		name: `mist-test`,
+		whatHelps: `Działa seboregulująco, czyli wpływa na uregulowanie nadmiernej pracy gruczołów
+				łojowych w skórze. Dzięki temu, skóra przestanie się nadmiernie przetłuszczać.
+				Rozjaśnia przebarwienia poprzez skuteczne, a zarazem delikatne złuszczanie skóry.
+				Dodatek substancji łagodzących uspokaja wymagającą cerę, ograniczając do
+				minimum możliwość powstawania podrażnień.`,
+		activeIngredients: `Kwas glikolowy (7%) – złuszcza naskórek, reguluje wydzielanie sebum
+				Ekstrakt z liści pieprzu tasmańskiego – działa dwukierunkowo:
+				przeciwzapalnie i łagodząco
+				Wyciąg z aloesu – nawilża skórę i zapobiega podrażnieniom`,
+		effects: `Skuteczne działanie na wszystkie problemy cery mieszanej/ tłustej/ trądzikowej.
+				Zlikwidowane przebarwienia posłoneczne, potrądzikowe, Rozjaśniona, świeża i
+				czysta cera, bez śladów podrażnień. Twoja skóra odzyskuje naturalne piękno.`,
+		forWhom: `Dla każdej kobiety, która boryka się z nierównomiernym kolorytem cery. Tonik w
+				sposób szybki i bezpieczny podtrzymuje efekty na co dzień. Blask twojej skóry
+				może trwać w nieskończoność. Podaruj sobie ten luksus. Zachwycaj swoją skórą,
+				codziennie.`,
+		methodOfUse: `Tonik stosuj raz dziennie, najlepiej wieczorem, po dokładnym oczyszczeniu i
+				osuszeniu skóry. Nanieść odrobinę kosmetyku na płatek kosmetyczny i przykładaj
+				go do skóry twarzy, szyi i dekoltu, omijając okolice oczu, ust, skrzydełek nosa i
+				błon śluzowych. Staraj się nie trzeć i nie rozciągać delikatnej skóry. Nie spłukuj.
+				Jeśli potrzebujesz, możesz użyć serum lub krem na noc.`,
+		additional: `Produkt jest wegański. Kolor kosmetyku w poszczególnych partiach może się
+				nieco różnić, ponieważ w zależności od momentu zbioru liści pieprzu
+				tasmańskiego, jego ekstrakt może mieć inną barwę.`,
+		starsNumber: 4,
+		price: 50,
+		higherPrice: `90,60 zł / 100ml, zawiera VAT`,
+		imageDetailsUrl: `assets/img/accessories/sth-pinkish.JPG`,
+		amount: `30ml`,
+		available: true,
+	},
 	// {
 	// 	id: 00,
 	// 	color: '',
