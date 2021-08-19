@@ -16,13 +16,16 @@ import { BannerCarouselComponent } from './components/banner-carousel/banner-car
 import { FooterComponent } from './components/footer/footer.component';
 
 const routes: Routes = [
-  { path: 'search/:keyword', component: ProductListComponent },
-  { path: 'products/:id', component: ProductDetailsComponent },
-  { path: 'category/:id/:name', component: ProductListComponent },
-  { path: 'category', component: ProductListComponent },
+  { path: '', component: ProductListComponent },
   { path: 'products', component: ProductListComponent },
+  { path: 'products/:productId', component: ProductDetailsComponent },
+  // { path: 'category', component: ProductListComponent },
+  // { path: 'category/:id/:name', component: ProductListComponent },
   { path: '', redirectTo: '/products', pathMatch: 'full' },
   { path: '**', redirectTo: '/products', pathMatch: 'full' },
+
+  // { path: 'search/:keyword', component: ProductListComponent },
+
 ]
 
 @NgModule({

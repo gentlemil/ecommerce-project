@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Product } from 'src/app/common/product';
+import { Product, products } from 'src/app/common/product';
 import { ProductService } from 'src/app/services/product.service';
 
 @Component({
@@ -10,25 +10,15 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class ProductDetailsComponent implements OnInit {
 
-  product: Product = new Product();   // fixing ERROR TypeError: Cannot read property 'imageUrl' of undefined
-  // other option is use question mark in html {{product?.imageUrl}}
+  product: Product;
 
   constructor(private productService: ProductService, private route: ActivatedRoute) { }
 
-  ngOnInit(): void {
-    this.route.paramMap.subscribe(() => {
-      this.handleProductDetails();
-    })
-  }
+  ngOnInit() {
+    const routeParams = this.route.snapshot.paramMap;
+    const productIdFromRoute = Number(routeParams.get('productId'));
 
-  handleProductDetails() {
-    // get the 'id' param string, convert string to a number using the plus symbol
-    const theProductId: number = +this.route.snapshot.paramMap.get('id');
-    this.productService.getProduct(theProductId).subscribe(
-      data => {
-        this.product = data;
-      }
-    )
+    this.product = products.find(product => product.id === productIdFromRoute);
   }
 
 

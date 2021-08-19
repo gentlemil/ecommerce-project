@@ -1,3 +1,18 @@
-<p *ngFor="let tempProduct of products">
-	{{ tempProduct.name}}: {{ tempProduct.unitPrice | currency: 'USD' }}
-</p>
+<div class="products-container">
+	<div class="card col-3" *ngFor="let product of products">
+		<a [title]="product.name + ' details'" [routerLink]="['/products', product.id]">
+			<img class="product-img" src="{{product.imageUrl}}" alt="">
+		</a>
+		<a [title]="product.name + ' details'" [routerLink]="['/products', product.id]">
+			<h5 class="name">{{product.name}}</h5>
+		</a>
+		<h5 class="price">{{product.price}},-</h5>
+		<div class="stars" [ngStyle]="{'color': (product.color)}">
+			<i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i>
+		</div>
+		<div class="card-bottom">
+			<div class="counter">1</div>
+			<button class="buy">DODAJ</button>
+		</div>
+	</div>
+</div>
