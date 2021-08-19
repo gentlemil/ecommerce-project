@@ -1,5 +1,5 @@
 <div class="products-container">
-	<div class="card col-3" *ngFor="let product of products">
+	<div class="card col-4" *ngFor="let product of products">
 		<a [title]="product.name + ' details'" [routerLink]="['/products', product.id]">
 			<img class="product-img" src="{{product.imageUrl}}" alt="">
 		</a>
@@ -11,8 +11,8 @@
 			<i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i>
 		</div>
 		<div class="card-bottom">
-			<div class="counter">1</div>
-			<button class="buy">DODAJ</button>
+			<!-- <div class="counter" [ngStyle]="{'background': (product.color)}">1</div> -->
+			<button class="buy" [ngStyle]="{'background': (product.color)}">DODAJ</button>
 		</div>
 	</div>
 </div>

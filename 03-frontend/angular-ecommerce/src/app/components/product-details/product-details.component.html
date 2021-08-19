@@ -1,8 +1,49 @@
-<h2>Product Details</h2>
+<div class="container details" *ngIf="product">
+	<div class="flex">
+		<div class="w40">
+			<img src="{{ product.imageDetailsUrl }}" alt="">
+		</div>
+		<div class="content w60">
+			<div class="pt-50" [ngStyle]="{'color': (product.colorDarker)}">
+				<h2>{{ product.name }}</h2>
+				<h3>{{ product.category }}</h3>
+			</div>
+			<div style="padding-bottom: 50px;">
+				<span class="flex-space-between" [ngStyle]="{'color': (product.colorDarker)}">
+					<h4>{{ product.amount }}</h4>
+					<h4>{{ product.price }},00 zł</h4>
+				</span>
+				<span class="" [ngStyle]="{'color': (product.color)}">
+					<p>{{ product.higherPrice }}</p>
+				</span>
+			</div>
+			<div>
+				<p class="available" [ngStyle]="(product.available) ? {'color': 'green'} : {'color': 'red'}">
+					{{product.available ? 'Produkt dostępny' : 'Produkt niedostępny'}}
+				</p>
+				<button class="buy" [ngStyle]="{'background': (product.color)}">Dodaj do koszyka</button>
+			</div>
+		</div>
+		<!-- <div class="w-2 stars pt-50" [ngStyle]="{'color': (product.color)}">
+			<i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i>
+		</div> -->
+	</div>
+	<div class="product-description">
+		<h2 class="title">Opis produktu</h2>
+		<div class="grid-detail">
+			<div class="container-esey pl-10 pr-10">
+				<p class="text-description">{{ product.whatHelps}}</p>
+				<p class="text-description">{{ product.activeIngredients}}</p>
+				<p class="text-description">{{ product.effects}}</p>
+				<p class="text-description">{{ product.forWhom}}</p>
+				<p class="text-description">{{ product.methodOfUse}}</p>
+				<p class="text-description">{{ product.additional}}</p>
+			</div>
+			<div class="prod-image">
+				<img src="{{ product.imageDetailsUrl }}" alt="">
+			</div>
 
-<div *ngIf="product">
-	<h3>{{ product.name }}</h3>
-	<h4>{{ product.price | currency }}</h4>
-	<p>{{ product.whatHelps }}</p>
+		</div>
+	</div>
 
 </div>
